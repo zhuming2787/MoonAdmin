@@ -1,0 +1,63 @@
+.customMenu .ant-menu-item-selected {
+  /* 加 !important 确保覆盖 Antd 默认样式（优先级更高） */
+  background-color: #000 !important;
+  color: #2593fc !important;
+  border-right: 2px solid #2593fc !important;
+  font-weight: 600 !important;
+}
+
+.search__input {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #f5f6fa;
+  border: none;
+  color: var(--text-primary);
+  width: 32em;
+  padding: 0.7rem 1rem;
+  border-radius: 30px;
+  transition: all ease-in-out 0.5s;
+  margin-right: -2rem;
+}
+
+.search__input:hover,
+.search__input:focus {
+  box-shadow: 0 0 1em #00000013;
+}
+
+.search__input:focus {
+  outline: none;
+  background-color: #f5f6fa;
+  box-shadow: 4px 4px 6px #ccc;
+}
+
+.search__input::-webkit-input-placeholder {
+  font-weight: 100;
+  color: var(--text-primary);
+}
+
+.search__input:focus + .search__button {
+  background-color: #f5f6fa;
+}
+
+.search__button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 0.1em;
+}
+
+.search__button:hover {
+  cursor: pointer;
+}
+
+.search__icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: var(--text-secondary);
+}
+.search {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

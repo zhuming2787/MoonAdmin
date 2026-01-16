@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // 兼容最新ES语法（React项目常用）
+    "module": "ESNext", // 模块系统（支持import/export）
+    "moduleResolution": "Node", // 按Node.js规则解析模块（适配npm包）
+    "baseUrl": "./", // 基础路径（所有相对路径基于项目根目录）
+    "paths": {
+      "@/*": ["src/*"] // 核心：路径别名，@ 指向 src 目录
+    },
+    "jsx": "react-jsx", // 支持React 17+的新JSX转换（无需导入React）
+    "allowSyntheticDefaultImports": true, // 允许默认导入（适配第三方库）
+    "esModuleInterop": true, // 兼容CommonJS/ES模块互操作
+    "strict": false, // 关闭严格模式（新手友好，大型项目可设为true）
+    "skipLibCheck": true // 跳过第三方库的类型检查（提升性能）
+  },
+  "include": [
+    "src/**/*" // 解析src下所有文件（包括子目录）
+  ],
+  "exclude": [
+    "node_modules", // 排除node_modules（无需解析）
+    "dist", // 排除打包后的目录
+    "build", // CRA打包目录
+    "public" // 排除public（静态资源无需解析）
+  ]
+}

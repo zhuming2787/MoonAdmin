@@ -1,0 +1,48 @@
+import { createBrowserRouter, Navigate } from "react-router-dom";
+import Login from "../pages/Login";
+import Layout from "../pages/Layout/Layout.jsx";
+import NotFound from "../pages/NotFound";
+import Dashboard from "../pages/Dashboard/Dashboard";
+import User from "../pages/User";
+import Category from "../pages/Category";
+import Article from "../pages/Article";
+import Tag from "../pages/Tag";
+import Comment from "../pages/Comment";
+
+// 模拟登录状态
+const isLogin = true;
+
+// 路由守卫：未登录的跳转登录页
+const PrivateRoute = ({ children }) => {
+  return isLogin ? children : <Navigate to="/login" />;
+};
+
+const router = createBrowserRouter([
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/",
+    element: (
+      <PrivateRoute>
+        <Layout />
+      </PrivateRoute>
+    ),
+    children: [
+      { path: "/", element: <Navigate to="/dashboard" /> },
+      { path: "dashboard", element: <Dashboard /> },
+      { path: "user", element: <User /> },
+      { path: "category", element: <Category /> },
+      { path: "tag", element: <Tag /> },
+      { path: "article", element: <Article /> },
+      { path: "comment", element: <Comment /> },
+    ],
+  },
+  {
+    path: "*",
+    element: <NotFound />,
+  },
+]);
+
+export default router;
