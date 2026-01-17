@@ -1,0 +1,76 @@
+/* DealsDetails.module.css */
+/* 卡片容器：和登录页卡片样式统一 */
+.dealsCard {
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  padding: 24px;
+}
+
+/* 标题栏：左右布局 */
+.headerBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.monthSelect {
+  width: 120px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+/* 表格整体样式 */
+.dealsTable {
+  .ant-table-thead > tr > th {
+    background-color: #f8fafc;
+    border-radius: 8px 8px 0 0;
+    padding: 12px 16px;
+    font-weight: 500;
+    color: #4b5563;
+    border: none;
+  }
+
+  .ant-table-tbody > tr > td {
+    padding: 16px;
+    border-bottom: 1px solid #f1f5f9;
+  }
+}
+
+/* 产品名称单元格：头像+文本布局 */
+.productNameCell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.productAvatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.productNameText {
+  font-weight: 500;
+  color: #1f2937;
+}
+
+/* 状态标签：和截图绿色完全一致 */
+.statusTag {
+  background-color: #10b981;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 500;
+}

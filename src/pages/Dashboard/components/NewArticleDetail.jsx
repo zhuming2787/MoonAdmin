@@ -130,7 +130,6 @@ const ArticleList = () => {
         overflow: "hidden",
         boxShadow: "0 2px 12px rgba(0, 0, 0, 0.06)", // 轻微阴影提升质感
       }}
-      extra={<Button onClick={handleAddArticle}>新增文章</Button>}
     >
       <Table
         columns={columns}
@@ -145,56 +144,6 @@ const ArticleList = () => {
         style={{ marginTop: 8 }}
         bordered={false} // 去掉表格边框，和 Card 融合更自然
       />
-
-      <Modal
-        title="新增文章"
-        open={modalVisible}
-        onOk={handleFormSubmit}
-        onCancel={() => setModalVisible(false)}
-        maskClosable={false} // 点击遮罩层不关闭弹窗
-        width={600}
-      >
-        <Form
-          ref={formRef}
-          layout="vertical" // 垂直布局，更适配弹窗
-          initialValues={{ createTime: dayjs() }} // 默认当前时间
-        >
-          <Form.Item
-            name="title"
-            label="文章标题"
-            rules={[{ required: true, message: "请输入文章标题！" }]}
-          >
-            <Input placeholder="请输入文章标题（如：React 最佳实践）" />
-          </Form.Item>
-
-          <Form.Item
-            name="author"
-            label="作者"
-            rules={[{ required: true, message: "请输入作者名称！" }]}
-          >
-            <Input placeholder="请输入作者名称" />
-          </Form.Item>
-
-          <Form.Item
-            name="createTime"
-            label="创建时间"
-            rules={[{ required: true, message: "请选择创建时间！" }]}
-          >
-            <DatePicker format="YYYY-MM-DD" style={{ width: "100%" }} />
-          </Form.Item>
-
-          <Form.Item
-            name="content"
-            label="文章简介"
-            rules={[{ required: true, message: "请输入文章简介！" }]}
-          >
-            <TextArea
-              rows={4}
-              placeholder="请输入文章简介（简要描述文章内容）"
-            />
-          </Form.Item>
-        </Form>
-      </Modal>
     </Card>
   );
 };

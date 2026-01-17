@@ -1,0 +1,149 @@
+/* Login.module.css */
+/* 1. 页面整体布局：全屏背景 + 内容居中 */
+.loginLayout {
+  height: 100vh;
+  background-color: #5f5f5f;
+}
+
+/* 2. 内容容器：让登录卡片垂直+水平居中 */
+.loginContent {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 3. SVG背景容器：适配卡片尺寸，不超出 */
+.loginSvgBg {
+  width: 100%;
+  max-width: 630px;
+}
+
+/* 4. 登录卡片核心样式：尺寸 + 圆角 + 阴影 */
+.loginCard {
+  width: 630px;
+  height: 735.36px;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+/* 5. 卡片内部内容区：内边距控制 */
+.loginCardContent {
+  padding: 80px 60px;
+}
+
+/* 6. 标题区域：居中 + 间距 */
+.loginCardTitle {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* 7. 主标题样式：字号 + 字重 + 无默认外边距 */
+.loginCardMainTitle {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+/* 8. 副标题样式：字号 + 颜色 + 间距 */
+.loginCardSubTitle {
+  font-size: 16px;
+  color: #6b7280;
+  margin-top: 12px;
+  display: block;
+}
+
+/* 9. 通用输入框样式：高度 + 背景 + 圆角 + 边框 */
+.loginInput {
+  height: 56px;
+  border-radius: 8px;
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  font-size: 16px;
+  padding: 0 16px;
+}
+
+/* 10. 输入框前缀图标样式：颜色 + 字号 */
+.loginInputIcon {
+  color: #9ca3af;
+  font-size: 18px;
+}
+
+/* 11. 密码区域头部：标题 + 忘记密码链接 左右对齐 */
+.loginPasswordHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+/* 12. 密码标签样式：字号 + 字重 */
+.loginPasswordLabel {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* 13. 密码输入框：额外的底部间距 */
+.loginPasswordInput {
+  margin-bottom: 20px;
+}
+
+/* 14. 通用链接样式：字号 + 颜色 + 无下划线 + 鼠标指针 */
+.loginLink {
+  font-size: 14px;
+  color: #3b82f6;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 15. 链接hover效果：颜色加深（核心交互） */
+.loginLink:hover {
+  color: #2563eb;
+}
+
+/* 16. 带下划线的链接（注册链接专用） */
+.loginLinkUnderline {
+  text-decoration: underline;
+}
+
+/* 17. 记住密码复选框区域：底部间距 */
+.loginRemember {
+  margin-bottom: 40px;
+}
+
+/* 18. 覆盖Antd复选框内置样式（:global 仅作用于当前组件内的复选框） */
+.loginRemember :global(.ant-checkbox-wrapper) {
+  font-size: 14px;
+  color: #374151;
+}
+
+/* 19. 登录按钮样式：高度 + 圆角 + 背景色 + 字号 + 字重 */
+.loginBtn {
+  height: 56px;
+  border-radius: 8px;
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* 20. 登录按钮hover/focus效果：背景色加深（交互反馈） */
+.loginBtn:hover,
+.loginBtn:focus {
+  background-color: #2563eb;
+  border-color: #2563eb;
+}
+
+/* 21. 注册链接区域：居中 + 顶部间距 */
+.loginRegister {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* 22. 注册区域文本样式：字号 + 颜色 */
+.loginRegister :global(.ant-typography) {
+  font-size: 14px;
+  color: #6b7280;
+}

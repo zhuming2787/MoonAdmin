@@ -1,3 +1,18 @@
+.sider {
+  height: 100%;
+  /* 2. 纵向内容超出时滚动，横向禁止滚动 */
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* 3. 预留内边距（可选，根据你的布局调整） */
+  padding: 8px 0;
+  /* 4. 滚动平滑（可选，提升体验） */
+  scroll-behavior: smooth;
+}
+
+.sider::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
 .customMenu .ant-menu-item-selected {
   /* 加 !important 确保覆盖 Antd 默认样式（优先级更高） */
   background-color: #000 !important;

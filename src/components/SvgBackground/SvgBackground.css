@@ -1,0 +1,28 @@
+/* 背景容器核心样式：适配父元素尺寸，相对定位 */
+.svg-background-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  background-color: #4880ff;
+}
+
+/* SVG 元素基础样式：避免遮挡前景 */
+.svg-element {
+  z-index: 1; /* 背景层级 */
+  transform: translateZ(0); /* 硬件加速，提升性能 */
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+}
+
+/* 前景内容容器：层级高于 SVG，保证内容在最上层 */
+.svg-background-foreground {
+  position: relative;
+  z-index: 2; /* 前景层级 > 背景层级 */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

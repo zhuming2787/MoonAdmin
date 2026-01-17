@@ -11,9 +11,8 @@ import dashboardImg1 from "../../assets/images/dashboard1.png";
 import dashboardImg2 from "../../assets/images/dashboard2.png";
 import dashboardImg3 from "../../assets/images/dashboard3.png";
 import dashboardImg4 from "../../assets/images/dashboard4.png";
-
-import TimeLineChart from "./components/TimeLineChart";
-import ArticleList from "./components/NewArticleDetail";
+import DealsDetails from "./components/DealsDetails/DealsDetails";
+import SalesDetails from "./components/SalesDetails/SalesDetails";
 
 const { Title, Text } = Typography;
 
@@ -37,8 +36,6 @@ const Dashboard = () => {
   const [loading, setLoading] = useState(true); // 加载状态
 
   useEffect(() => {
-    // 定义异步函数获取数据
-
     const fetchDashboardData = async () => {
       try {
         setLoading(true);
@@ -294,10 +291,18 @@ const Dashboard = () => {
       )}
 
       {/* 新增访问曲线图 */}
-      <TimeLineChart title="近期访问人数" data={sampleData} />
+      <SalesDetails title="近期访问人数" data={sampleData} />
 
-      {/* 新增文章详情图 */}
-      <ArticleList title="近期新增文章" />
+      {/* DealsDetails */}
+      <DealsDetails />
+
+      {/* 新增访问曲线 和 老用户访问曲线 */}
+
+      {/* 新用户，以及Repeated次数 */}
+
+      {/* 即将发布的产品 */}
+
+      {/* 价格分析 */}
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
-import Login from "../pages/Login";
+import Login from "../pages/Login/Login";
 import Layout from "../pages/Layout/Layout.jsx";
 import NotFound from "../pages/NotFound";
 import Dashboard from "../pages/Dashboard/Dashboard";
@@ -8,7 +8,8 @@ import Category from "../pages/Category";
 import Article from "../pages/Article";
 import Tag from "../pages/Tag";
 import Comment from "../pages/Comment";
-
+import Rigister from "../pages/Login/Register";
+import Products from "@/pages/Products/Products";
 // 模拟登录状态
 const isLogin = true;
 
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/register",
+    element: <Rigister />,
   },
   {
     path: "/",
@@ -37,6 +42,7 @@ const router = createBrowserRouter([
       { path: "tag", element: <Tag /> },
       { path: "article", element: <Article /> },
       { path: "comment", element: <Comment /> },
+      { path: "products", element: <Products /> },
     ],
   },
   {
