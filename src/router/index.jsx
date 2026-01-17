@@ -10,6 +10,8 @@ import Tag from "../pages/Tag";
 import Comment from "../pages/Comment";
 import Rigister from "../pages/Login/Register";
 import Products from "@/pages/Products/Products";
+import Favorites from "@/pages/Favorites/Favorites";
+import Inbox from "@/pages/Inbox/Inbox";
 // 模拟登录状态
 const isLogin = true;
 
@@ -43,6 +45,8 @@ const router = createBrowserRouter([
       { path: "article", element: <Article /> },
       { path: "comment", element: <Comment /> },
       { path: "products", element: <Products /> },
+      { path: "favorites", element: <Favorites /> },
+      { path: "Inbox", element: <Inbox /> },
     ],
   },
   {
