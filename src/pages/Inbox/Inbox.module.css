@@ -1,22 +1,3 @@
-.sider {
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding: 8px 0;
-  scroll-behavior: smooth;
-}
-
-.sider::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
-}
-.customMenu .ant-menu-item-selected {
-  background-color: #000 !important;
-  color: #2593fc !important;
-  border-right: 2px solid #2593fc !important;
-  font-weight: 600 !important;
-}
-
 .search__input {
   font-family: inherit;
   font-size: inherit;
@@ -67,7 +48,6 @@
   fill: var(--text-secondary);
 }
 .search {
-  flex: 4;
   display: flex;
   align-items: center;
   justify-content: center;

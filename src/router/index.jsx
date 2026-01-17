@@ -12,6 +12,7 @@ import Rigister from "../pages/Login/Register";
 import Products from "@/pages/Products/Products";
 import Favorites from "@/pages/Favorites/Favorites";
 import Inbox from "@/pages/Inbox/Inbox";
+import OrderList from "@/pages/OrderList/OrderList";
 // 模拟登录状态
 const isLogin = true;
 
@@ -47,6 +48,7 @@ const router = createBrowserRouter([
       { path: "products", element: <Products /> },
       { path: "favorites", element: <Favorites /> },
       { path: "Inbox", element: <Inbox /> },
+      { path: "orderlist", element: <OrderList /> },
     ],
   },
   {
