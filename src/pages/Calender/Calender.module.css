@@ -1,0 +1,221 @@
+.container {
+  max-width: 1400px;
+}
+
+.main {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.eventListContainer {
+  width: 320px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+}
+
+.addEventButton {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+  height: 44px;
+  font-size: 14px;
+}
+
+.eventListTitle {
+  margin-bottom: 1.5rem;
+  color: #222;
+  font-weight: 600;
+}
+
+.eventItem {
+  padding: 1rem 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.eventItem:last-child {
+  border-bottom: none;
+}
+
+.eventTitle {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.eventMeta {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.eventLocation {
+  margin: 0.3rem 0;
+}
+
+.attendees {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 0.8rem;
+}
+
+.attendeeAvatar {
+  border: 1px solid #e8e8e8;
+}
+
+.attendeeCount {
+  background: #e6f7ff;
+  color: #1890ff;
+  border-radius: 10px;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.seeMoreButton {
+  width: 100%;
+  margin-top: 1.5rem;
+  border-radius: 6px;
+  background: #f5f5f5;
+  border: none;
+  color: #595959;
+  height: 44px;
+}
+
+.calendarContainer {
+  flex: 1;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  padding: 2rem;
+}
+
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.monthTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.navButtons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.navButton {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e8e8e8;
+  background: #fff;
+  color: #666;
+  padding: 0;
+}
+
+.navButton:hover {
+  background: #f5f5f5;
+  color: #1890ff;
+  border-color: #1890ff;
+}
+
+/* 日历主体 */
+.calendar {
+  width: 100%;
+}
+
+/* 隐藏Antd默认样式 */
+.ant-calendar-header,
+.ant-calendar-footer,
+.ant-calendar-month-panel-header {
+  display: none !important;
+}
+
+/* 星期栏 */
+.ant-calendar-week-header {
+  background: #fafafa;
+  border-radius: 6px 6px 0 0;
+}
+
+.ant-calendar-column-header {
+  padding: 1rem 0;
+  text-align: center;
+  font-weight: 500;
+  color: #666;
+  border: none !important;
+}
+
+/* 日期单元格 */
+.ant-calendar-date {
+  padding: 0 !important;
+  border: 1px solid #f0f0f0 !important;
+  border-radius: 4px;
+  height: 100px !important;
+  min-height: 100px;
+}
+
+.dateCell {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 当天日期样式 */
+.todayCell {
+  background: #f0f8ff;
+}
+
+/* 日期数字 */
+.dateNumber {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+/* 非当月日期 */
+.ant-calendar-date-value--other-month .dateNumber {
+  color: #bfbfbf;
+}
+
+/* 事件标签 */
+.cellEvents {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  overflow: hidden;
+}
+
+.eventTag {
+  padding: 2px 6px;
+  border-radius: 3px;
+  color: white;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0.9;
+}
+
+/* 日历格子间距 */
+.ant-calendar-body {
+  border-spacing: 8px !important;
+  border-collapse: separate !important;
+}

@@ -1,11 +1,9 @@
-/* 容器整体样式 */
 .pricingContainer {
   max-width: 1200px;
   display: flex;
   flex-direction: column;
 }
 
-/* 卡片网格布局 */
 .pricingGrid {
   display: flex;
   gap: 26px;
@@ -23,7 +21,6 @@
   height: 848px;
   position: relative;
   overflow: hidden;
-  /* 模拟设计图的浅色纹理背景 */
   background-size: cover;
   background-repeat: no-repeat;
 }
