@@ -157,6 +157,7 @@ const ProductsList: React.FC = () => {
       {/* 渲染列表 */}
       <div style={{ width: "1141px", height: "733px" }}>
         <Table
+          style={{ borderRadius: "100px" }}
           columns={columns}
           dataSource={data}
           bordered
@@ -164,7 +165,6 @@ const ProductsList: React.FC = () => {
           scroll={{ x: "max-content" }}
         />
       </div>
-      {/* 页面具体信息 */}
     </div>
   );
 };

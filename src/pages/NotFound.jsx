@@ -20,7 +20,14 @@ const NotFound = () => {
       <SvgBackground className={styles.loginSvgBg}>
         <Card className={styles.loginCard} bordered={false}>
           <div className={styles.loginCardContent}>
-            <div style={{ textAlign: "center", marginBottom: "60px" }}>
+            <div
+              style={{
+                textAlign: "center",
+                display: "flex",
+                justifyContent: "center",
+                marginBottom: "60px",
+              }}
+            >
               <img
                 src={notfound}
                 alt="404 Not Found"
@@ -30,7 +37,7 @@ const NotFound = () => {
 
             <div className={styles.loginCardTitle}>
               <Title level={2} className={styles.loginCardMainTitle}>
-                Looks like you've got lost....
+                该页面暂时未开发哦~
               </Title>
             </div>
 
@@ -41,7 +48,7 @@ const NotFound = () => {
                 className={styles.loginBtn}
                 onClick={handleBackToDashboard}
               >
-                Back to Dashboard
+                回到仪表盘
               </Button>
             </div>
           </div>

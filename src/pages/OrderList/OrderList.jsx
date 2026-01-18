@@ -15,7 +15,6 @@ const OrderList = () => {
       style={{
         width: "1141px",
         display: "flex",
-        gap: "20px",
         flexDirection: "column",
       }}
     >
