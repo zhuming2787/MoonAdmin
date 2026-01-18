@@ -16,6 +16,7 @@ import OrderList from "@/pages/OrderList/OrderList";
 import ProductStock from "@/pages/ProductStock/ProductStock";
 import Pricing from "@/pages/Pricing/Pricing";
 import Calender from "@/pages/Calender/Calender";
+import ToDo from "@/pages/ToDo/ToDo";
 // 模拟登录状态
 const isLogin = true;
 
@@ -55,6 +56,7 @@ const router = createBrowserRouter([
       { path: "productstock", element: <ProductStock /> },
       { path: "pricing", element: <Pricing /> },
       { path: "calender", element: <Calender /> },
+      { path: "todo", element: <ToDo /> },
     ],
   },
   {
