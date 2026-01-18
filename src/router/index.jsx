@@ -17,6 +17,7 @@ import ProductStock from "@/pages/ProductStock/ProductStock";
 import Pricing from "@/pages/Pricing/Pricing";
 import Calender from "@/pages/Calender/Calender";
 import ToDo from "@/pages/ToDo/ToDo";
+import Contact from "@/pages/Contact/Contact";
 // 模拟登录状态
 const isLogin = true;
 
@@ -26,14 +27,8 @@ const PrivateRoute = ({ children }) => {
 };
 
 const router = createBrowserRouter([
-  {
-    path: "/login",
-    element: <Login />,
-  },
-  {
-    path: "/register",
-    element: <Rigister />,
-  },
+  { path: "/login", element: <Login /> },
+  { path: "/register", element: <Rigister /> },
   {
     path: "/",
     element: (
@@ -57,6 +52,7 @@ const router = createBrowserRouter([
       { path: "pricing", element: <Pricing /> },
       { path: "calender", element: <Calender /> },
       { path: "todo", element: <ToDo /> },
+      { path: "contact", element: <Contact /> },
     ],
   },
   {

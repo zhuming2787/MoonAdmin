@@ -1,0 +1,82 @@
+/* 整体容器 */
+.container {
+  max-width: 1141px;
+}
+
+/* Header 布局 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header h3 {
+  margin: 0;
+  color: #222;
+  font-weight: 600;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  .cardGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .cardGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contactCard {
+  background: #fff;
+  border-radius: 16px;
+  width: 360px;
+  height: 414px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.contactCard:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.avatar {
+  width: 100%;
+  height: 276px;
+  object-fit: cover; /* 保证图片填满且不变形 */
+}
+
+.contactInfo {
+  padding: 1rem;
+}
+
+.contactName {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.3rem;
+}
+
+.contactEmail {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+/* Message 按钮 */
+.messageButton {
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  padding: 0.4rem 1.2rem;
+}
