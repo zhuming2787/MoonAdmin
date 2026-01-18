@@ -11,11 +11,11 @@ export default defineConfig({
     },
   },
   server: {
-    port: 3000, // 沿用 CRA 的默认端口，避免习惯改变
-    open: true, // 启动时自动打开浏览器
+    port: 3000,
+    open: true,
   },
   build: {
-    outDir: "dist", // 打包输出目录（CRA 是 build，可改为 build 保持一致）
-    sourcemap: false, // 生产环境关闭 sourcemap，减小包体积
+    outDir: "dist",
+    sourcemap: false,
   },
 });

@@ -42,7 +42,7 @@ const Login = () => {
           JSON.stringify({
             username: values.username,
             remember: true,
-          })
+          }),
         );
       } else {
         localStorage.removeItem("login-remember");

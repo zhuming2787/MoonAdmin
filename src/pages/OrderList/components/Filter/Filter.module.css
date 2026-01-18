@@ -1,0 +1,60 @@
+/* 整体容器：横向排列，统一背景和边框 */
+.filterBarContainer {
+  display: flex;
+  width: 818px;
+  height: 70px;
+  align-items: center;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px; /* 整体容器圆角，和首尾块呼应 */
+  overflow: hidden; /* 隐藏内部块的溢出，确保圆角生效 */
+}
+
+.filterIcon {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-right: 1px solid #e5e7eb;
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.filterBlock {
+  font-weight: bold;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-right: 1px solid #e5e7eb;
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.filterBlock:first-child {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-left: none;
+}
+
+.filterBlock:last-child {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-right: none;
+  color: #ef4444; /* Reset Filter 红色文字 */
+  gap: 4px; /* 图标和文字的间距 */
+}
+
+.filterBlock:not(:first-child):not(:last-child) {
+  border-radius: 0;
+  border-left: none;
+}
+
+.filterBlock:hover {
+  background-color: #f3f4f6;
+}
