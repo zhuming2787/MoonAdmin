@@ -14,6 +14,7 @@ import Favorites from "@/pages/Favorites/Favorites";
 import Inbox from "@/pages/Inbox/Inbox";
 import OrderList from "@/pages/OrderList/OrderList";
 import ProductStock from "@/pages/ProductStock/ProductStock";
+import Pricing from "@/pages/Pricing/Pricing";
 // 模拟登录状态
 const isLogin = true;
 
@@ -51,6 +52,7 @@ const router = createBrowserRouter([
       { path: "Inbox", element: <Inbox /> },
       { path: "orderlist", element: <OrderList /> },
       { path: "productstock", element: <ProductStock /> },
+      { path: "pricing", element: <Pricing /> },
     ],
   },
   {

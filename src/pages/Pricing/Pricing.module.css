@@ -1,0 +1,113 @@
+/* 容器整体样式 */
+.pricingContainer {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 卡片网格布局 */
+.pricingGrid {
+  display: flex;
+  gap: 26px;
+  flex-wrap: wrap; /* 小屏幕自动换行 */
+}
+
+/* 单个卡片样式 */
+.Card {
+  background: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  width: 350px;
+  height: 848px;
+  position: relative;
+  overflow: hidden;
+  /* 模拟设计图的浅色纹理背景 */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* 套餐名称 */
+.planName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  color: #222;
+}
+
+/* 套餐副标题 */
+.planSubtitle {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+}
+
+/* 价格 */
+.price {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #1890ff; /* 匹配 Ant Design 蓝色 */
+  margin-bottom: 1.8rem;
+  line-height: 1;
+}
+
+/* 分隔线 */
+.divider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 1.6rem 0;
+}
+
+/* 功能列表 */
+.featureList {
+  margin-bottom: 2rem;
+}
+
+/* 可用功能 */
+.featureAvailable {
+  margin: 0.9rem 0;
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* 不可用功能（灰色） */
+.featureUnavailable {
+  margin: 0.9rem 0;
+  color: #a8a8a8;
+  font-size: 1rem;
+}
+
+/* 按钮样式 */
+.getStartedButton {
+  background: transparent;
+  border: 2px solid #1890ff;
+  color: #1890ff;
+  padding: 0.9rem 2.2rem;
+  border-radius: 28px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.getStartedButton:hover {
+  background: #e6f7ff;
+  border-color: #40a9ff;
+}
+
+/* 免费试用链接 */
+.freeTrialLink {
+  color: #222;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.freeTrialLink:hover {
+  color: #1890ff;
+}
