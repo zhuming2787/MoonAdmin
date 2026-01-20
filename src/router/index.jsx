@@ -18,6 +18,7 @@ import Pricing from "@/pages/Pricing/Pricing";
 import Calender from "@/pages/Calender/Calender";
 import ToDo from "@/pages/ToDo/ToDo";
 import Contact from "@/pages/Contact/Contact";
+import Invoice from "@/pages/Invoice/Invoice";
 // 模拟登录状态
 const isLogin = true;
 
@@ -53,6 +54,7 @@ const router = createBrowserRouter([
       { path: "calender", element: <Calender /> },
       { path: "todo", element: <ToDo /> },
       { path: "contact", element: <Contact /> },
+      { path: "Invoice", element: <Invoice /> },
     ],
   },
   {
