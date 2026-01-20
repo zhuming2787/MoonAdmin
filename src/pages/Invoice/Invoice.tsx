@@ -1,6 +1,7 @@
 import { Button, Table } from "antd";
 import Title from "antd/es/typography/Title";
 import styles from "./Invoice.module.css";
+
 const columns = [
   {
     title: "Serial No.",
@@ -52,7 +53,7 @@ const data = [
 const Invoice = () => {
   return (
     <div>
-      <Title level={3}>Invoice</Title>
+      <Title level={3}>发票</Title>
 
       {/* 这里是白色背景的卡片 */}
       <div className={styles.container}>
@@ -76,13 +77,11 @@ const Invoice = () => {
 
         {/* 列表渲染 */}
         <main>
-          <Table columns={columns} dataSource={data} />
+          <Table columns={columns} dataSource={data} />/
         </main>
 
-        {/* 计算Total = $总和 */}
         <strong className={styles.total}>Total = $4680</strong>
 
-        {/* 第一个按钮是打印，第二个按钮是Send发送 */}
         <div className={styles.btns}>
           <Button
             style={{ height: "54px", width: "50px" }}

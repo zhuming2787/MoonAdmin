@@ -1,0 +1,11 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Main {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}

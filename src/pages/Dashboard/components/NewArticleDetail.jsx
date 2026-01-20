@@ -122,8 +122,6 @@ const ArticleList = () => {
   return (
     <Card
       title="近期新增文章"
-      bordered={false}
-      // 保持你之前要求的圆角样式，适配视觉规范
       style={{
         width: "100%",
         borderRadius: "16px",

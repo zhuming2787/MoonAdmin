@@ -1,0 +1,10 @@
+.Main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 16px;
+  height: 744px;
+  width: 1140px;
+}

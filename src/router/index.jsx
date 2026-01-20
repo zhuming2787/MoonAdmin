@@ -19,6 +19,10 @@ import Calender from "@/pages/Calender/Calender";
 import ToDo from "@/pages/ToDo/ToDo";
 import Contact from "@/pages/Contact/Contact";
 import Invoice from "@/pages/Invoice/Invoice";
+import Elements from "@/pages/Elements/Elements";
+import Team from "@/pages/Team/Team";
+import Table from "@/pages/Table/Table";
+import Setting from "@/pages/Setting/Setting";
 // 模拟登录状态
 const isLogin = true;
 
@@ -55,6 +59,10 @@ const router = createBrowserRouter([
       { path: "todo", element: <ToDo /> },
       { path: "contact", element: <Contact /> },
       { path: "Invoice", element: <Invoice /> },
+      { path: "uielement", element: <Elements /> },
+      { path: "team", element: <Team /> },
+      { path: "table", element: <Table /> },
+      { path: "setting", element: <Setting /> },
     ],
   },
   {
